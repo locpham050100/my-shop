@@ -33,7 +33,7 @@
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
 }
 .header__navbar-user-name {
-  margin-left: 0.8rem;
+  margin-left: 0.6rem;
   font-size: 1.4rem;
   font-weight: 400;
 }
@@ -66,7 +66,8 @@
   z-index: -1;
 }
 
-.header__navbar-user-item {
+.header__navbar-user-item--separate {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .header__navbar-user-item a {
@@ -142,6 +143,10 @@
   text-decoration: none;
 }
 
+.header__navbar-icon-link:nth-child(2) {
+  margin-left: 0.6rem;
+}
+
 .header__navbar-icon {
   font-size: 1.6rem;
   margin: 0 0.6rem;
@@ -199,12 +204,14 @@
 /* Header Notifications */
 .header__notify {
   position: absolute;
+  z-index: 1;
   top: 130%;
   right: 0;
   width: 40.4rem;
   background-color: var(--white-color);
-  border: #d3d3d3 0.1rem solid;
-  transform-origin: calc(100% - 2rem) top;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.2rem;
+  transform-origin: calc(100% - 3.2rem) top;
   animation: HeaderNotifyGrowth ease-in 0.2s;
   will-change: opacity, transform;
   display: none;
@@ -264,7 +271,7 @@
 }
 
 .header__notify-item:hover {
-  background-color: #b3b3ff;
+  background-color: #e6e6ff;
 }
 
 .header__notify-item--seen {
@@ -444,6 +451,11 @@
   width: 20rem;
   display: flex;
 }
+.header__logo-link {
+  display: flex;
+  text-decoration: none;
+  color: transparent;
+}
 .header__logo-icon {
   color: var(--white-color);
   font-size: 6rem;
@@ -506,7 +518,7 @@
 }
 
 .header__search-history-item:hover {
-  background-color: #b3b3ff;
+  background-color: #e6e6ff;
 }
 
 .header__search-history-item a {
@@ -543,7 +555,7 @@
   position: absolute;
   right: 0;
   top: 120%;
-  width: 14rem;
+  width: 13rem;
   list-style: none;
   padding-left: 0;
   box-shadow: 0 0.1rem 0.3rem #ccc;
@@ -563,7 +575,7 @@
 
 .header__search-option-item {
   background-color: var(--white-color);
-  padding: 0.8rem 0.8rem;
+  padding: 0.8rem 0.2rem;
 }
 
 .header__search-option-item:first-child {
@@ -756,8 +768,7 @@
   color: var(--text-color);
   margin: 0;
 }
-.header__cart-item-price-wrap {
-}
+
 .header__cart-item-price {
   font-size: 1.4rem;
   font-weight: 400;
