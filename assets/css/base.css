@@ -7,7 +7,9 @@
 
   --header-height: 12rem;
   --navbar-height: 3.4rem;
-  --header-width-search-height: calc(var(--header-height) - var(--navbar-height));
+  --header-width-search-height: calc(
+    var(--header-height) - var(--navbar-height)
+  );
 }
 
 * {
@@ -20,7 +22,7 @@ html {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
-
+/* start responsive */
 .grid {
   width: 1200px;
   max-width: 100%;
@@ -34,7 +36,23 @@ html {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -1.2rem;
+  margin-right: -1.2rem;
 }
+/* test */
+.grid__column-2 {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  width: 16.6667%;
+}
+
+.grid__column-10 {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  width: 83.3334%;
+}
+
+/* end responsive */
 
 /* animation */
 @keyframes fadeIn {
@@ -48,10 +66,10 @@ html {
 
 @keyframes growth {
   from {
-    transform: scale(var(--growth-from))
+    transform: scale(var(--growth-from));
   }
   to {
-    transform: scale(var(--growth-to))
+    transform: scale(var(--growth-to));
   }
 }
 
@@ -79,7 +97,7 @@ html {
   --growth-to: 1s;
   margin: auto;
   z-index: 1;
-  animation: growth linear 0.1s
+  animation: growth linear 0.1s;
 }
 
 /* Button style */
@@ -104,9 +122,9 @@ html {
 }
 
 .btn.btn--size-s {
-    height: 3.2rem;
-    font-size: 1.2rem;
-    padding: 0 0.8rem;
+  height: 3.2rem;
+  font-size: 1.2rem;
+  padding: 0 0.8rem;
 }
 
 .btn.btn--primary {
