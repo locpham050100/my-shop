@@ -181,9 +181,7 @@ html {
   padding: 1rem 1.6rem;
   display: none;
 }
-.select-input__item {
 
-}
 .select-input__link {
   font-size: 1.4rem;
   color: var(--text-color);
