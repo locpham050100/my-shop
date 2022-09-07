@@ -950,10 +950,24 @@
 /* end home sort + filter */
 
 /* start product item */
+.home-product {
+  margin-bottom: 1rem;
+}
 .home-product-item {
   position: relative;
+  display: block;
   margin-top: 1rem;
   background-color: var(--white-color);
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  transition: transform linear 0.1s;
+  will-change: transform;
+  cursor: pointer;
+}
+.home-product-item:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.05);
 }
 .home-product-item__img {
   padding-top: 100%;
