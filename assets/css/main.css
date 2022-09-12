@@ -1134,4 +1134,8 @@
   color: var(--white-color);
   margin-bottom: auto;
 }
+.home-product__pagination {
+  margin: 4.8rem 0 3.2rem 0;
+}
 /* end product item */
+
