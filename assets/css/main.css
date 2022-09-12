@@ -1040,8 +1040,7 @@
 .home-product-item__like--liked .home-product-item__like-icon-empty {
   display: none;
 }
-.home-product-item__like-icon-empty {
-}
+
 .home-product-item__like-icon-fill {
   display: none;
   color: #f63d30;
@@ -1062,15 +1061,12 @@
 .home-product-item__origin {
   display: flex;
   justify-content: space-between;
-  margin: 0.3rem 1rem 0 1rem;
+  margin: 0.3rem 1rem 0rem 1rem;
   color: #595959;
   font-size: 1.2rem;
   font-weight: 300;
 }
-.home-product-item__brand {
-}
-.home-product-item__origin-name {
-}
+
 .home-product-item__favourite {
   position: absolute;
   top: 1rem;
