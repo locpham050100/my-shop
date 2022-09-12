@@ -187,6 +187,7 @@ html {
   background-color: var(--white-color);
   padding: 1rem 1.6rem;
   display: none;
+  z-index: 1;
 }
 
 .select-input__link {
