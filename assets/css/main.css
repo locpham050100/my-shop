@@ -709,6 +709,7 @@
 .header__cart {
   text-align: center;
   width: 15.5rem;
+  margin-top: 1.5rem;
 }
 
 .header__cart-wrap {
